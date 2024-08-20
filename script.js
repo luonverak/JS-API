@@ -89,8 +89,7 @@ for(let i in carosel){
                         <img src="${carosel[i]['show']}"  class="d-block w-100" alt="...">
                     </div>`;
 }
-
-//document.getElementsByClassName('carosel-data')[0].innerHTML=getCarosel;
+ 
 // fetch api product
 const url="https://fakestoreapi.com/products?limit=8";
 var getProduct='';
@@ -120,8 +119,7 @@ const product=async()=>{
     } catch (error) {
         console.log(error);
     }
-    document.getElementsByClassName('main-container')[0].innerHTML=getProduct;
-    console.log(getProduct)
+    document.getElementsByClassName('main-container')[0].innerHTML=getProduct; 
 }
 product();
 // search
